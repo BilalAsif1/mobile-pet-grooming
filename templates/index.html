@@ -1,0 +1,293 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Clean Pets,<br>
+                        Happy Hearts!
+                    </h1>
+                    <p class="hero-subtitle">
+                        Professional mobile pet grooming that comes to you! Premium care for your furry friends 
+                        in the comfort of your own home. We bring the salon experience right to your doorstep.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="{{ url_for('booking') }}" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-calendar-check me-2"></i>BOOK NOW
+                        </a>
+                        <a href="{{ url_for('services') }}" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-cut me-2"></i>View Services
+                        </a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile Service</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Stress-Free</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span>Professional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image">
+                    <div class="pet-circle">
+                        <img src="https://cdn.pixabay.com/photo/2021/07/07/14/40/dog-6394502_1280.jpg" 
+                             alt="Happy groomed golden retriever" class="pet-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Decorative circles -->
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+</section>
+
+<!-- Mobile Service Benefits -->
+<section class="mobile-benefits py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">Why Choose Mobile Grooming?</h2>
+                <p class="section-subtitle">Bringing professional pet care to your doorstep</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h4 class="benefit-title">Comfort of Home</h4>
+                    <p class="benefit-description">
+                        No more stressful car rides! Your pet stays comfortable in their familiar environment.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4 class="benefit-title">Saves Your Time</h4>
+                    <p class="benefit-description">
+                        No waiting in line or scheduling around salon hours. We come when it's convenient for you.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h4 class="benefit-title">One-on-One Attention</h4>
+                    <p class="benefit-description">
+                        Your pet gets undivided attention throughout the entire grooming session.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Customer Testimonials -->
+<section class="testimonials py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real reviews from happy pet parents</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Amazing service! My Golden Retriever Max was so relaxed during his grooming. 
+                        Sarah was gentle, professional, and Max looks absolutely gorgeous!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <div class="author-avatar">JM</div>
+                        </div>
+                        <div class="author-info">
+                            <h5 class="author-name">Jennifer M.</h5>
+                            <p class="author-location">Downtown Area</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Incredible convenience! No more struggling to get Luna into the car. 
+                        The mobile van is fully equipped and Luna actually enjoyed the experience."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <div class="author-avatar">DK</div>
+                        </div>
+                        <div class="author-info">
+                            <h5 class="author-name">David K.</h5>
+                            <p class="author-location">Riverside District</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Best investment for my anxious rescue dog! Bella was calm and comfortable 
+                        throughout. Professional service with reasonable pricing."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <div class="author-avatar">MS</div>
+                        </div>
+                        <div class="author-info">
+                            <h5 class="author-name">Maria S.</h5>
+                            <p class="author-location">Oak Hill</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="services-preview py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">HOW WE GROOM!</h2>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h4 class="service-title">GROOMING</h4>
+                    <p class="service-description">
+                        Professional haircuts, styling, and trimming to keep your pet looking their absolute best.
+                    </p>
+                    <ul class="service-features">
+                        <li>Breed-specific cuts</li>
+                        <li>Styling & trimming</li>
+                        <li>Professional equipment</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shower"></i>
+                    </div>
+                    <h4 class="service-title">WASH STATIONS</h4>
+                    <p class="service-description">
+                        Luxurious bathing experience with premium shampoos and conditioning treatments.
+                    </p>
+                    <ul class="service-features">
+                        <li>Premium products</li>
+                        <li>Deep cleaning</li>
+                        <li>Skin & coat care</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="service-title">FULL SERVICE</h4>
+                    <p class="service-description">
+                        Complete grooming package including nail trimming, ear cleaning, and more.
+                    </p>
+                    <ul class="service-features">
+                        <li>Complete package</li>
+                        <li>Nail & ear care</li>
+                        <li>Health checkups</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="{{ url_for('services') }}" class="btn btn-primary btn-lg">VIEW ALL SERVICES</a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="feature-badge">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <span class="feature-text">Fully Insured</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="feature-badge">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <span class="feature-text">Health Focused</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="feature-badge">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <span class="feature-text">Whole Day Care</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="feature-badge">
+                    <div class="feature-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <span class="feature-text">Pet Nail Trim</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

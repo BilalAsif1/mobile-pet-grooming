@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+
+{% block title %}Services - PupBar Pet Grooming{% endblock %}
+
+{% block content %}
+<!-- Services Hero -->
+<section class="page-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="page-title">Our Grooming Services</h1>
+                <p class="page-subtitle">Professional care for every pet, every time</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Grid -->
+<section class="services-grid py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Basic Wash & Dry -->
+            <div class="col-lg-6 mb-4">
+                <div class="service-detail-card">
+                   <div class="service-image" style="max-width: 100%; overflow: hidden;">
+  <img 
+    src="https://scontent.fxjm3-1.fna.fbcdn.net/v/t39.30808-6/504098464_1264179342375262_5424518409190913645_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=J8NyZHwHN-QQ7kNvwGtKdF4&_nc_oc=AdkuQUVlRV86lEwn7hPKqHy3EqKmkaxAzsQjMXi4i5SqvfBf6Z-Dc4iW6V2G4y9u87E&_nc_zt=23&_nc_ht=scontent.fxjm3-1.fna&_nc_gid=K4I0JCBA8r4aajfupo69tA&oh=00_AfOwDuytPPIR1a1hudWtv12iZOAUHvrlemlFp7DtFxNEeQ&oe=6853A1A9" 
+    alt="Dog getting a bath" 
+    class="img-fluid" 
+    style="width: 100%; height: auto; display: block; object-fit: cover; border-radius: 8px; margin-top: -60px;"
+  >
+</div>
+
+                    <div class="service-content">
+                        <h3 class="service-name">Basic Wash & Dry</h3>
+                        <p class="service-price">$35</p>
+                        <p class="service-desc">
+                            A thorough bath with premium shampoo, conditioning treatment, and professional blow-dry. 
+                            Perfect for maintaining your pet's hygiene between full grooming sessions.
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Premium shampoo & conditioner</li>
+                            <li><i class="fas fa-check"></i> Professional blow-dry</li>
+                            <li><i class="fas fa-check"></i> Basic brush-out</li>
+                            <li><i class="fas fa-check"></i> Ear cleaning</li>
+                        </ul>
+                        <a href="{{ url_for('booking') }}" class="btn btn-primary">Book This Service</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Grooming -->
+            <div class="col-lg-6 mb-4">
+                <div class="service-detail-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="service-image">
+                        <img src="https://cdn.pixabay.com/photo/2022/11/02/17/39/dog-7565682_1280.jpg" 
+                             alt="Full grooming service" class="img-fluid">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-name">Full Grooming</h3>
+                        <p class="service-price">$65</p>
+                        <p class="service-desc">
+                            Complete grooming package including haircut, styling, bath, nail trim, and ear cleaning. 
+                            Your pet will look and feel amazing!
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Professional haircut & styling</li>
+                            <li><i class="fas fa-check"></i> Bath with premium products</li>
+                            <li><i class="fas fa-check"></i> Nail trimming & filing</li>
+                            <li><i class="fas fa-check"></i> Ear cleaning & plucking</li>
+                            <li><i class="fas fa-check"></i> Sanitary trim</li>
+                            <li><i class="fas fa-check"></i> Brush-out & styling</li>
+                        </ul>
+                        <a href="{{ url_for('booking') }}" class="btn btn-primary">Book This Service</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nail Trimming -->
+            <div class="col-lg-6 mb-4">
+                <div class="service-detail-card">
+                    <div class="service-image">
+                        <img src="https://cdn.pixabay.com/photo/2022/01/09/19/52/nail-clipping-6926855_1280.jpg" 
+                             alt="Pet nail trimming tools" class="img-fluid">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-name">Nail Trimming</h3>
+                        <p class="service-price">$15</p>
+                        <p class="service-desc">
+                            Professional nail trimming service to keep your pet's nails healthy and prevent 
+                            overgrowth. Quick and stress-free for your furry friend.
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Professional nail clipping</li>
+                            <li><i class="fas fa-check"></i> Filing & smoothing</li>
+                            <li><i class="fas fa-check"></i> Paw inspection</li>
+                            <li><i class="fas fa-check"></i> Quick service (15 mins)</li>
+                        </ul>
+                        <a href="{{ url_for('booking') }}" class="btn btn-primary">Book This Service</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teeth Cleaning -->
+            <div class="col-lg-6 mb-4">
+                <div class="service-detail-card">
+                    <div class="service-image">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/12/02/38/the-mouth-of-a-dog-2633289_1280.jpg" 
+                             alt="Pet teeth cleaning" class="img-fluid">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-name">Teeth Cleaning</h3>
+                        <p class="service-price">$25</p>
+                        <p class="service-desc">
+                            Dental hygiene service to keep your pet's teeth clean and breath fresh. 
+                            Important for overall health and wellbeing.
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Teeth brushing</li>
+                            <li><i class="fas fa-check"></i> Dental inspection</li>
+                            <li><i class="fas fa-check"></i> Fresh breath treatment</li>
+                            <li><i class="fas fa-check"></i> Oral health tips</li>
+                        </ul>
+                        <a href="{{ url_for('booking') }}" class="btn btn-primary">Book This Service</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flea Treatment -->
+            <div class="col-lg-6 mb-4">
+                <div class="service-detail-card">
+                    <div class="service-image">
+                        <img src="https://pixabay.com/get/ge2ed662a0413e57f1a0b39eb1d8fdc69dc52f100767d5931298baa4308b34850c4641d59c099f0a3df23b1e706eaae6f9c4e044e1a75652d68079977ccd954eb_1280.jpg" 
+                             alt="Pet grooming tools for treatment" class="img-fluid">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-name">Flea Treatment</h3>
+                        <p class="service-price">$30</p>
+                        <p class="service-desc">
+                            Specialized flea treatment bath with medicated shampoo to eliminate fleas and 
+                            soothe irritated skin. Safe and effective treatment.
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Medicated flea shampoo</li>
+                            <li><i class="fas fa-check"></i> Thorough flea comb-out</li>
+                            <li><i class="fas fa-check"></i> Skin soothing treatment</li>
+                            <li><i class="fas fa-check"></i> Prevention advice</li>
+                        </ul>
+                        <a href="{{ url_for('booking') }}" class="btn btn-primary">Book This Service</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Spa Package -->
+            <div class="col-lg-6 mb-4">
+                <div class="service-detail-card premium">
+                    <div class="premium-badge">Premium</div>
+                    <div class="service-image">
+                        <img src="https://pixabay.com/get/ga1c48cea670e97cba780f8c562e7af0cab1c7d580bf269d5c9892975e98ddde02102bc5fb65510422772a0e5cfd75ac00ea5ba8a52dc5ba53e80d99e12b03c03_1280.jpg" 
+                             alt="Premium pet spa treatment" class="img-fluid">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-name">Premium Spa Package</h3>
+                        <p class="service-price">$95</p>
+                        <p class="service-desc">
+                            The ultimate luxury experience for your pet! Includes everything in our full grooming 
+                            plus special treatments and aromatherapy.
+                        </p>
+                        <ul class="service-includes">
+                            <li><i class="fas fa-check"></i> Full grooming service</li>
+                            <li><i class="fas fa-check"></i> Aromatherapy treatment</li>
+                            <li><i class="fas fa-check"></i> Deep conditioning mask</li>
+                            <li><i class="fas fa-check"></i> Pawdicure with nail polish</li>
+                            <li><i class="fas fa-check"></i> Cologne & bow tie</li>
+                            <li><i class="fas fa-check"></i> Photo session</li>
+                        </ul>
+                        <a href="{{ url_for('booking') }}" class="btn btn-primary">Book This Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add-on Services -->
+<section class="addon-services py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Add-On Services</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="addon-card">
+                    <div class="addon-icon">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <h4 class="addon-name">De-shedding Treatment</h4>
+                    <p class="addon-price">+$10</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="addon-card">
+                    <div class="addon-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h4 class="addon-name">Cologne & Perfume</h4>
+                    <p class="addon-price">+$5</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="addon-card">
+                    <div class="addon-icon">
+                        <i class="fas fa-ribbon"></i>
+                    </div>
+                    <h4 class="addon-name">Bow Tie or Bandana</h4>
+                    <p class="addon-price">+$3</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="addon-card">
+                    <div class="addon-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h4 class="addon-name">Photo Session</h4>
+                    <p class="addon-price">+$15</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: Brad's Pet Grooming
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    plan: free
